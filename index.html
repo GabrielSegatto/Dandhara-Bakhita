@@ -26,7 +26,7 @@
   
   <header>
 
-    <!--LOGO-->
+
 
     <!--CABEÇALHO-->
 
@@ -68,9 +68,9 @@
                           </a>
 
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Simples</a>
-                            <a class="dropdown-item" href="#">Avançado</a>
-                            <a class="dropdown-item" href="#">Cover</a>
+                            <a class="dropdown-item" href="project-simp.html">Simples</a>
+                            <a class="dropdown-item" href="project-avan.html">Avançado</a>
+                            <a class="dropdown-item" href="project-cover.html">Cover</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#projetos">Todos</a>
                           </div>
@@ -109,13 +109,13 @@
             </div>
     </nav>
 
-    <!-- FIM DO CABEÇALHO -->
+<!--FIM DO CABEÇALHO -->
 
 
 
   
 
-            <!-- HOME -->
+ <!-- HOME -->
 
             <div class="view" id="home" style="background-image: url('img/homeimg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
             
@@ -161,7 +161,7 @@
 
             </div>
 
-            <!-- FIM HOME -->
+<!-- FIM HOME -->
 
 
 
@@ -172,10 +172,11 @@
 
 
 
+
 <!--SOBRE-->
 
   
-  <section id="about-me" . style="
+  <section class="section container scrollspy" id="about-me" . style="
   padding-bottom: 50px;
   padding-top: 50px; padding-right: 0px;
   padding-left: 0px;
@@ -283,7 +284,8 @@
 
 
 
-<!-- SKILLS-->
+
+<!--SKILLS-->
 
 <section id="skills" . style=" width: 100%; height: auto; padding-left: 0px; padding-right: 0px; padding-top: 50px;padding-bottom: 50px;">
 
@@ -367,7 +369,7 @@
 
                         <br>
 
-                        <a href="#" class="btn btn-primary". style="margin-left: 50px;">Quero conhecer!</a>
+                        <a href="project-simp.html" class="btn btn-primary". style="margin-left: 50px;">Quero conhecer!</a>
 
                       </div>
                   
@@ -388,7 +390,7 @@
                         <p class="card-text". style="text-align: center;">Lista com os links dos meus projetos avançados, com uma boa base e estrutura.</p>
                         <br>
 
-                        <a href="#" class="btn btn-primary". style="margin-left: 50px;">Quero conhecer!</a>
+                        <a href="project-avan.html" class="btn btn-primary". style="margin-left: 50px;">Quero conhecer!</a>
 
                       </div>
                   
@@ -408,7 +410,7 @@
 
                         <p class="card-text". style="text-align: center;">Lista com os links dos meus projetos cover, apenas uma boa olhada em sua interface original para reproduzir.</p>
 
-                        <a href="#" class="btn btn-primary". style="margin-left: 50px;">Quero conhecer!</a>
+                        <a href="project-cover.html" class="btn btn-primary". style="margin-left: 50px;">Quero conhecer!</a>
 
                       </div>
                   
@@ -420,12 +422,15 @@
                   
 </section>
 
-<!--FIM SESSÃO PROJETOS-->
+<!--FIM PROJETOS-->
 
 
-<!--QUINTA PARTE-->
 
-<section id="contato">
+
+
+<!--CONTATO-->
+
+<section id="contato" . style="background-image: url('img/homesombra1.jpg');">
 
   <div class="container">
 
@@ -433,7 +438,7 @@
           
           <div class="section-title text-center">
             
-            <h1>Get In Touch</h1>
+            <h1 . style="color: white;">Vamos conversar!</h1>
         
           </div>
         
@@ -441,14 +446,16 @@
   
       <div class="row">
 
-          <div class="contact-form">
+          <div class="contact-form" . style="border-radius:20px;
+      -moz-border-radius:20px;
+      -webkit-border-radius:20px;">
 
                 <div class="row">
 
                     <div class="text">
 
-                      <h2>Drop Us a Line</h2>
-                      <p>We are here to answer any question you may have</p>
+                      <h2 . style="font-family: 'Baloo da 2', sans-serif; font-size: 25px;">Entre em contato comigo</h2>
+                      <p . style="font-family: 'Open Sans Condensed', sans-serif; font-size: 17px;">Preencha corretamente os campos abaixo</p>
 
                     </div>
 
@@ -458,13 +465,17 @@
 
                         <div class="col-6">
 
-                            <input type="text" class="form-control" name="" placeholder="Nome">
+                            <input type="text" class="form-control" name="name" placeholder="Nome" . style=" border-radius:15px;
+                            -moz-border-radius:15px;
+                            -webkit-border-radius:15px;">
                           
                         </div>
 
                         <div class="col-6">
 
-                            <input type="text" class="form-control" name="" placeholder="Email">
+                            <input type="text" class="form-control" name="Email" placeholder="Email" . style=" border-radius:15px;
+                            -moz-border-radius:15px;
+                            -webkit-border-radius:15px;">
 
                         </div>
 
@@ -474,7 +485,11 @@
 
                     <div class="col-12">
 
-                        <textarea class="form-control" placeholder="Mensagem"></textarea>
+                        <textarea class="form-control" id="mensagem" placeholder="Mensagem" . style=" border-radius:15px;
+                        -moz-border-radius:15px;
+                        -webkit-border-radius:15px;"></textarea>
+
+                        <br>
 
                     </div>
 
@@ -482,8 +497,8 @@
 
                 <div class="row">
 
-                  <div class="button text-right">
-                      <a href="">Get In Touch</a>
+                  <div class="button text-center" id="enviar">
+                      <a href="">Enviar</a>
                   </div>
 
 
@@ -497,7 +512,11 @@
 
 </section>
 
-<!--FIM QUINTA PARTE-->
+<!--FIM CONTATO-->
+
+
+
+
 
 <!--FOOTER-->
 
@@ -506,5 +525,29 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
     <script src="js/bootstrap.min.js"></script>
+    <script>$(document).ready(function(){
+
+      $('.scrollspy').scrollSpy();
+    });
+    
+    </script>
+
     </body>
 </html>
+
+
+
+
+<!--APAGAR SCROLLSPY-->
+
+<!--APAGAR SCROLLSPY-->
+
+<!--APAGAR SCROLLSPY-->
+
+<!--APAGAR SCROLLSPY-->
+
+<!--APAGAR SCROLLSPY-->
+
+<!--APAGAR SCROLLSPY-->
+
+<!--APAGAR SCROLLSPY-->
