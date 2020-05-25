@@ -1,4 +1,5 @@
-function validacao() {
+function validacao(e) {
+  e.preventDefault();
 
   if (document.form.nome.value == "") {
 
@@ -33,16 +34,14 @@ function validacao() {
     return false;
   }
 
-
   else {
     Swal.fire(
       'Obrigada!',
       'Conversaremos em breve!',
       'success'
-    ); 
-    sleep(2000);
+    );
+    return true
   }
-
 }
 
 function sleep(miliseconds) {

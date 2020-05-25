@@ -12,8 +12,7 @@ window.addEventListener("carregando",function(load){
         e.preventDefault();
 
         $('ul.filters > li').removeClass('active');
-        $(this).addClass('active');
-
+        $(this).addClass('active');sweetalertclick
     });
 
     $('.card').mouseenter(function(){
