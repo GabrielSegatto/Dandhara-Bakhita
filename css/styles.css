@@ -539,16 +539,11 @@ h5 {
   color: #ffffff;
 }
 
-#contato #error_message{
-  margin-bottom: 5px;
-  padding: 0px;
-  background: #fe8b8e;
-  text-align: center;
-  font-size: 14px;
-  transition: all 0.5s ease;
-}
-
-
+.enviar:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 
 
 

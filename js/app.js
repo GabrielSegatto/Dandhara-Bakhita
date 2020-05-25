@@ -12,6 +12,6 @@ $('nav a').click(function(e){
 
     $('html, body').animate({
         scrollTop: targetOffset - menuHeight
-    }, 500);
+    }, 900);
 
 })
