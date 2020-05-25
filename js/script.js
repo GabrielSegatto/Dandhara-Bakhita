@@ -1,3 +1,8 @@
+window.addEventListener("carregando",function(load){
+
+    console.log("pagina carregada com sucesso!");
+})
+
 (function(){
 
     'use strict';

@@ -1,9 +1,14 @@
+* {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 header,
 .view {
   height: 100%;
 }
+
 
 @media (max-width: 991px) {
   html,
@@ -22,6 +27,32 @@ header,
     
   }
 }
+
+
+
+
+
+/*SCROLLBAR*/
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #b05ae2;
+  border-radius: 12px; 
+}
+
+/*SCROLLBAR*/
+
+
+nav a:hover, section#about-me:hover ~ nav a[href="#about-me"]{
+  color: rgb(200, 200, 200);
+  border-bottom: 2px solid white;
+}
+
+
+
 
 .view:before{
   position: absolute;
@@ -490,7 +521,7 @@ h5 {
   max-width: 100%;
 }
 
-#contato .contact-form .button a{
+#contato .contact-form .button .enviar{
   border-radius: 4px;
   color: #ffff;
   padding: 12px 25px;
@@ -503,11 +534,19 @@ h5 {
   box-shadow: 0px 10px 15px #e8e8e8;
 }
 
-#contato .contact-form .button a:hover{
+#contato .contact-form .button .enviar:hover{
   background-color: #000000;
   color: #ffffff;
 }
 
+#contato #error_message{
+  margin-bottom: 5px;
+  padding: 0px;
+  background: #fe8b8e;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
 
 
 
